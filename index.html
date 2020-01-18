@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+ 
+<head>
+   <meta charset="UTF-8">
+<title>初めてのサイト</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="bg-image">
+
+	
+
+
+<div id=di1>
+
+<br>
+
+<h1 >こんにちは</h1>
+
+
+<div><img src="dog.png" alt="かわいいチワワ" width="200"  ></div>
+
+
+
+<a href="#" title="押す"  onclick="typeWriter()" id=a1>わん！</a>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'welcome to my website';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+</script>	
+
+
+  <a href="login.html" id=lo>Log In</a>
+
+
+
+</div>
+
+
+
+</body>
+</html>
